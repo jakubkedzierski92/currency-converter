@@ -1,17 +1,23 @@
-let formElement = document.querySelector(".js-form")
+{
+    const formElement = document.querySelector(".js-form");
 
-let currencyElement = document.querySelector(".js-currencyIn")
+    const currencyElement = document.querySelector(".js-currencyIn");
+  
+    const resultElement = document.querySelector(".js-currencyResult");
+  
+    const selectedElement = document.querySelector(".js-currencySelected");
 
-let resultElement = document.querySelector(".js-currencyResult")
+  const calculate = (currency, currencyRate) => {
+    
 
-let selectedElement = document.querySelector(".js-currencySelected")
+    return currencyElement.value/ selectedElement.value;
+  };
 
-formElement.addEventListener("input", () => {
+  formElement.addEventListener("input", () => {
+    const result = calculate(currencyElement.value, selectedElement.value);
 
-let currency = currencyElement.value
-let currencyRate = selectedElement.value
+    resultElement.innerText = result.toFixed(1)
+  });
+}
 
-let result = currency / currencyRate
 
-resultElement.innerText = result.toFixed(1)
-})
