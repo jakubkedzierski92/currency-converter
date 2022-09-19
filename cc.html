@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator walutowy</title>
-    <link rel="icon" href="icon.png">
-    <meta property="og:img" content="currency converter/exchange.png">
+    <meta property="og:image" content="ogmoney.png">
+    <link rel="icon" href="icon.png" />
+    <meta property="og:img" content="currency converter/exchange.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -25,39 +26,44 @@
   </head>
   <body>
     <div class="background">
-   
-    <div class="container">
-      <form class="form js-form">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Kalkulator walutowy</legend>
+      <div class="container">
+        <form class="form js-form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walutowy</legend>
 
-          <p>
-            <label>
-              <span class="form__labelText">Mam:</span>
-              <input class="form__input js-currencyIn" type="number" min="1" />
-              <select class="form__fieldSelector">
-                <option value="4.70">Euro</option>
-                <option value="1" selected>PLN</option>
-                <option value="4.71">USD</option>
-              </select>
-            </label>
-          </p>
-          <p class="form__paragraph">
-            <label>
-              <span class="form__labelText">Chcę:</span>
+            <p>
+              <label>
+                <span class="form__labelText">Mam:</span>
+                <input
+                  class="form__input js-currencyIn"
+                  type="number"
+                  min="1"
+                />
+                <select class="form__fieldSelector">
+                  <option value="4.70">Euro</option>
+                  <option value="1" selected>PLN</option>
+                  <option value="4.71">USD</option>
+                </select>
+              </label>
+            </p>
+            <p class="form__paragraph">
+              <label>
+                <span class="form__labelText">Chcę:</span>
 
-              <select class="form__fieldSelector--special js-currencySelected">
-                <option value="4.70" selected>Euro</option>
-                <option value="1">PLN</option>
-                <option value="4.71">USD</option>
-              </select>
+                <select
+                  class="form__fieldSelector--special js-currencySelected"
+                >
+                  <option value="4.70" selected>Euro</option>
+                  <option value="1">PLN</option>
+                  <option value="4.71">USD</option>
+                </select>
 
-              <span class="form__result js-currencyResult">0.0</span>
-            </label>
-          </p>
-        </fieldset>
-      </form>
+                <span class="form__result js-currencyResult">0.0</span>
+              </label>
+            </p>
+          </fieldset>
+        </form>
+      </div>
     </div>
-  </div>
   </body>
 </html>
