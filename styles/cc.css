@@ -95,7 +95,7 @@ body {
 }
 
 .background {
-  background-image: url("/exchange.png") ;
+  background-image: url("images/exchange.png") ;
   max-height: 100%;
   height: 600px;
   background-repeat: no-repeat;
